@@ -1,0 +1,41 @@
+<%- include("../partials/header") %>
+<div class="container">
+		<header class="jumbotron">
+			<div class="container">
+				<h1><i class="fa fa-cutlery"></i>  Welcome to trackstraunt!!</h1>
+				<p> view our hand-picked restraunts from all over the world</p>
+				<p>
+					<a class="btn btn-primary btn-lg" href="/campgrounds/new"> Add new restraunt</a>
+				</p>
+			</div>
+		</header>
+
+		<div class="row text-center" style="display:flex;flex-wrap:wrap;">
+			<% for(var i=0;i<campgrounds.length;i++){%>
+			<div class="col-md-3 col-xs-6">
+				<div class="thumbnail camp">		
+					<img src="<%= campgrounds[i].image %>" >
+					<div class="caption">
+						<h4><%= campgrounds[i].name %></h4>
+					</div>
+					<p><a href="/campgrounds/<%= campgrounds[i]._id %>" class="btn btn-success btn-md">More info</a></p>
+					
+				</div>
+			</div>
+			<%}%>
+		</div>
+</div>
+
+	<div id="footer"class="container-fluid">
+		<div>
+			<h3 id="ic"><a href="https://www.instagram.com/mo_.saif/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					 <a href="https://www.facebook.com/mosaif.saif.9"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					 <a href="https://twitter.com/mo_saif7"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></i>
+			</h3>
+		</div>
+		<div >
+				<p id="copyright"><i class="fa fa-copyright"></i>2020  Designed By:-<strong>Saifuddin</strong></p>
+		</div>
+	</div>
+
+<%- include("../partials/footer") %>

@@ -1,0 +1,29 @@
+<%- include("../partials/header")%>
+ 
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h1><%=user.firstName%></h1>
+			<div class="thumbnail">
+					<img src="<%=user.avatar%>" alt="User profile image">
+					<div class="caption">Email:<a href="mailto:<%=user.email%>"><%=user.email%></a></div>
+			</div>
+			What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		</div>
+		<div class="col-md-8">
+			<div class="thumbnail">
+				<div class="caption">
+					<h3><%=user.username%>'s restraunts:-</h3>
+				</div>
+				<%campgrounds.forEach(function(camp){%>
+					<ul>
+						<li><a href="/campgrounds/<%=camp._id%>"><%=camp.name%></a></li>
+					</ul>
+				<%});%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer")%>

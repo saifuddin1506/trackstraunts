@@ -1,0 +1,54 @@
+body{
+	background-color: #f2f2f2;
+}
+.jumbotron{
+	background-color: #A6F1E7;
+}
+.thumbnail img {
+	width:100%;
+	height: 65%;
+	border-radius:inherit;
+	padding:0;
+}
+.thumbnail{
+	padding:0;
+}
+#footer{
+	
+	background-color:white;
+	color: blue;
+	text-align: center;
+
+}
+#copyright {
+	color: black;
+	margin-bottom: 0;
+}
+h3 .fa{
+	/*color: black;*/
+	font-size: 40px;
+	margin:1px;
+
+}
+#ic{
+	margin-left: 10px;
+}
+ .camp{
+	padding:0;
+	height: 300px;
+	border-radius: 7px;
+	border:1px solid #fff;
+	box-shadow:2px 2px 4px #fff,-2px -2px 4px #fff;
+}
+.thumbnail .caption-full{
+	padding:9px;
+}
+#form-delete{
+	display: inline;
+}
+#comment-delete{
+	display: inline;
+}
+.fa{
+	font-size: 50px;
+}
