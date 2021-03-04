@@ -17,8 +17,8 @@ var commentRoutes= require("./routes/comments"),
 //seedDB();
 
 
-mongoose.connect("mongodb+srv://blogger:blogger@cluster0.mh7xv.mongodb.net/trackstraunt?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
-//mongoose.connect("mongodb://localhost/restraunt",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+
+mongoose.connect("mongodb://localhost/restraunt",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
 
 app.use(bodyparser.urlencoded({extended:true}));
 
